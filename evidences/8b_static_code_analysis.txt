@@ -1,0 +1,22 @@
+roid, pylint
+Successfully installed astroid-4.0.4 isort-8.0.1 pylint-4.0.7 tomlkit-0.15.1
+
+[notice] A new release of pip is available: 25.3 -> 26.2.1
+[notice] To update, run: pip3 install --upgrade pip
+theia@theiadocker-yesithvalenc:/home/project/final_project$ pylint server
+************* Module server
+server.py:47:0: C0304: Final newline missing (missing-final-newline)
+
+-----------------------------------
+Your code has been rated at 9.23/10
+
+theia@theiadocker-yesithvalenc:/home/project/final_project$ pylint server
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.23/10, +0.77)
+
+theia@theiadocker-yesithvalenc:/hom
+theia@thei
+theia@thei         adocker-ye         sithvalenc       :/home/pro         ject/final
+theia@theiadocker-yesithvalenc:/home/project/final_projec
+theia@theiadocker-yesithvalenc:/home/project/final_project$
