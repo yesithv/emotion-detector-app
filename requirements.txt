@@ -1,4 +1,5 @@
 Flask
 transformers
 torch
+requests
 truststore

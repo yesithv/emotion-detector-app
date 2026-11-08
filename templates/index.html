@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Emotion Detector</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}"
+    >
+</head>
+
+<body>
+
+<main class="page-container">
+
+    <section class="app-card">
+
+        <header class="app-header">
+            <span class="badge">NLP · AI</span>
+
+            <h1>Emotion Detector</h1>
+
+            <p class="subtitle">
+                Detect anger, disgust, fear, joy and sadness in text using a
+                Transformer-based NLP model.
+            </p>
+        </header>
+
+        <div class="app-body">
+
+        <section class="analyzer">
+
+            <label for="textToAnalyze">
+                Text to analyze
+            </label>
+
+            <textarea
+                id="textToAnalyze"
+                rows="8"
+                placeholder="Example: I am so happy I finally finished this project!"
+            ></textarea>
+
+            <button
+                id="analyzeButton"
+                type="button"
+                onclick="RunEmotionDetection()"
+            >
+                Detect Emotions
+            </button>
+
+        </section>
+
+        <section id="resultContainer" class="result-container">
+
+            <p id="emptyState" class="empty-state">
+                Results will appear here after you analyze a text.
+            </p>
+
+            <div id="resultContent" class="hidden">
+
+                <p class="result-label">
+                    Dominant emotion
+                </p>
+
+                <div id="dominantEmotion" class="dominant-emotion">
+                </div>
+
+                <p id="errorMessage" class="error-message hidden"></p>
+
+                <ul id="emotionScores" class="emotion-scores">
+                </ul>
+
+            </div>
+
+        </section>
+
+        </div>
+
+        <footer class="app-footer">
+            <span>DistilRoBERTa</span>
+            <span>Hugging Face Transformers</span>
+            <span>Flask</span>
+        </footer>
+
+    </section>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
